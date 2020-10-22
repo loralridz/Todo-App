@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: #4b4276;
+    background: white;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+form button:hover {
+    background:#4b4276;
+    color: white;
+}
+
+.containerItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listItem {
+    min-width: 30%;
+    list-style: none;
+}
+
+.divItem {
+    margin: 0.5rem;
+    background: white;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.divItem li {
+    flex: 1;
+}
+
+.deletebtn,
+.completebtn {
+    background-color: #4b4276;
+    color: rgb(207, 204, 204);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.deletebtn {
+    background-color: #571515;
+}
+
+.newItem {
+    padding: 0rem 0, 5rem;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
